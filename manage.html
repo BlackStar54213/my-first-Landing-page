@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>manage</title>
+  <link rel="stylesheet" href="manage.css" />
+  <link rel="stylesheet" href="slider.css">
+  <link rel="stylesheet" href="test2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      padding-top: 70px;
+      height: 9cm;
+    }
+
+
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .img {
+      margin-top: -260px;
+      float: right;
+      position: absolute;
+    }
+
+    .card {
+      padding: 50px;
+      color: hsl(227, 12%, 61%);
+
+    }
+
+    .name {
+      margin-top: 50px;
+      padding: 5px;
+      color: hsl(228, 41%, 27%);
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    p {
+      padding: 5px;
+      font-size: 16px;
+      font-family: Be Vietnam Pro;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="road">
+
+
+
+    <nav><img src="images/logo.svg" alt="" />
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Pricing</a>
+        <a href="#news">Product</a>
+        <a href="#contact">About Us</a>
+        <a href="#about">Careers</a>
+        <a href="#about">Community</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+  </div>
+  <button class="nav-btn">Get Started</button>
+  </div>
+  </nav>
+
+  <h1>Bring everyone together to build better products.</h1>
+  <p class="headers-text">
+    Manage makes it simple for software teams to plan day-to-day task while
+    keeping the larger team goals in view
+  </p>
+  <button class="btn">Get Started</button>
+  <img src="images/illustration-intro.svg" alt="illustration" class="illustration" />
+
+  <h2 class="diff">What's different about Manage?</h2>
+  <p class="header-text">
+    Manage provides all the functionality your team needs, without the
+    complexity. Our software is tailor-made for modern digital product teams.
+  </p>
+
+  <div class="props">
+
+    <h3>Track company-wide progress</h3>
+    <p class="body-text">
+      See how your day-to-day task fit into the wider vision. Go from tracking
+      progress at mile-stone level all the way down to the smallest details.
+      Never lose sight of the bigger picture again.
+    </p>
+
+    <h3>Advanced built-in reports</h3>
+    <p class="body-text">
+      Set internal delivery estimates and track the progress towards company goals.
+      Our customisable dashboard helps you build out the reports you need to keep stakeholders informed.
+    </p>
+
+    <h3>Everything you need in one place</h3>
+    <p class="body-text">
+      Stop jumping from one service to another to communicate, store files,
+      track tasks and share documents. Manage offers an all-in-one team productivity solution.
+    </p>
+  </div>
+  <h2 class="comments" style="text-align: center;">What they've said</h2>
+  <div class="container">
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img class="img" src="images/avatar-anisha.png" alt="ali picture"
+            style="height: 2cm; width: 2cm; border-radius: 1cm;">
+          <div class="card"
+            style="align-items: center; text-align: center; background-color:hsl(0, 0%, 98%); width: 350px; padding-top: 40px;">
+            <p class="name" style=" color: hsl(228, 41%, 27%);">Anisha Li</p>
+            <p class="comment">"Manage has supercharged our team's workflow. The ability to maintain visibility on
+              larger
+              milestones at all times keeps everyone motivated"</p>
+          </div>
+        </div>
+        <div class="swiper-slide"><img class="img" src="images/avatar-ali.png" alt="ali picture"
+            style="height: 2cm; width: 2cm; border-radius: 1cm;">
+          <div class="card"
+            style="align-items: center; text-align: center; background-color:hsl(0, 0%, 98%); width: 350px; padding-top: 40px;">
+            <p class="name">Ali Bravo</p>
+            <p class="comment">"We have been able to cancel so many other subscriptions since using manage. there is
+              no
+              more
+              cross-chanel confusion and everyone is more fucused"</p>
+          </div>
+        </div>
+        <div class="swiper-slide"><img class="img" src="images/avatar-richard.png" alt="ali picture"
+            style="height: 2cm; width: 2cm; border-radius: 1cm;">
+          <div class="card"
+            style="align-items: center; text-align: center; background-color:hsl(0, 0%, 98%); width: 350px; padding-top: 40px;">
+            <p class="name">Richard Watts</p>
+            <p class="comment">"Manage allows us to provide stucture and process. It keeps us organized and focused. I
+              can't stop
+              recommending them to everyone I talk"</p>
+          </div>
+        </div>
+        <div class="swiper-slide"><img class="img" src="images/avatar-shanai.png" alt="ali picture"
+            style="height: 2cm; width: 2cm; border-radius: 1cm;">
+          <div class="card"
+            style="align-items: center; text-align: center; background-color:hsl(0, 0%, 98%); width: 350px; padding-top: 40px;">
+            <p class="name">Shanai Gough</p>
+            <p class="comment">"Their software allows us track, manage and collaborate on our projects from anywhere.
+              It
+              keeps the
+              whole team in-sync without being intrusive."</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="contained">
+    <!-- Swiper -->
+    <div class="swiper mySwipers">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img class="img" src="images/avatar-anisha.png" alt="ali picture"
+            style="height: 2cm; width: 2cm; border-radius: 1cm;">
+          <div class="card"
+            style="align-items: center; text-align: center; background-color:hsl(0, 0%, 98%); width: 350px; padding-top: 40px;">
+            <p class="name" style=" color: hsl(228, 41%, 27%);">Anisha Li</p>
+            <p class="comment">"Manage has supercharged our team's workflow. The ability to maintain visibility on
+              larger
+              milestones at all times keeps everyone motivated"</p>
+          </div>
+        </div>
+        <div class="swiper-slide"><img class="img" src="images/avatar-ali.png" alt="ali picture"
+            style="height: 2cm; width: 2cm; border-radius: 1cm;">
+          <div class="card"
+            style="align-items: center; text-align: center; background-color:hsl(0, 0%, 98%); width: 350px; padding-top: 40px;">
+            <p class="name">Ali Bravo</p>
+            <p class="comment">"We have been able to cancel so many other subscriptions since using manage. there is
+              no
+              more
+              cross-chanel confusion and everyone is more fucused"</p>
+          </div>
+        </div>
+        <div class="swiper-slide"><img class="img" src="images/avatar-richard.png" alt="ali picture"
+            style="height: 2cm; width: 2cm; border-radius: 1cm;">
+          <div class="card"
+            style="align-items: center; text-align: center; background-color:hsl(0, 0%, 98%); width: 350px; padding-top: 40px;">
+            <p class="name">Richard Watts</p>
+            <p class="comment">"Manage allows us to provide stucture and process. It keeps us organized and focused. I
+              can't stop
+              recommending them to everyone I talk"</p>
+          </div>
+        </div>
+        <div class="swiper-slide"><img class="img" src="images/avatar-shanai.png" alt="ali picture"
+            style="height: 2cm; width: 2cm; border-radius: 1cm;">
+          <div class="card"
+            style="align-items: center; text-align: center; background-color:hsl(0, 0%, 98%); width: 350px; padding-top: 40px;">
+            <p class="name">Shanai Gough</p>
+            <p class="comment">"Their software allows us track, manage and collaborate on our projects from anywhere.
+              It
+              keeps the
+              whole team in-sync without being intrusive."</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <button class="bot-btn">Get Started</button>
+
+
+  <div class="simple">
+    <h2>Simplify how your team works today.</h2>
+    <button class="sim-btn">Get Started</button>
+
+  </div>
+  <div class="footer">
+    <img src="images/logo.svg" alt="" class="logos">
+    <div class="media">
+      <img src="images/icon-facebook.svg" alt="">
+      <img src="images/icon-youtube.svg" alt="">
+      <img src="images/icon-twitter.svg " alt="">
+      <img src="images/icon-pinterest.svg" alt="">
+      <img src="images/icon-instagram.svg" alt="">
+    </div>
+    <ul class="lister">
+      <li>Home</li>
+      <li>Pricing</li>
+      <li>Product</li>
+      <li>About us</li>
+    </ul>
+    <ul class="listed">
+      <li>Careers</li>
+      <li>Community</li>
+      <li>Privacy Policy</li>
+    </ul>
+
+    <img src="images/logo.svg" alt="" class="logoss">
+    <div class="search">
+      <form>
+        <input type="email" class="mail" placeholder="Updates in your inbox..."
+          style="padding: 13px; border-radius:20px; border: none; color: hsl(12, 88%, 59%); " required>
+
+        <button type="submit"
+          style="background-color:hsl(12, 88%, 59%); color: white; border: none; padding: 12px; border-radius: 13px;">Go</button>
+      </form>
+    </div>
+    <p class="copy">Copyright 2020. All Rights Reserved.</p>
+  </div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    }
+    );
+  </script>
+
+  <script>
+    var swiper = new Swiper(".mySwipers", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    }
+    );
+  </script>
+
+  <script>function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }</script>
+</body>
+
+</html>
